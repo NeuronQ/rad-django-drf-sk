@@ -1,0 +1,127 @@
+{% load static humanize %}<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  {% comment %}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  {% endcomment %}
+  <link type="text/css" rel="stylesheet" href="{% static 'lib/bootstrap-4.4.1-dist/css/bootstrap.css' %}"/>
+
+  <!-- FontAwesome -->
+  {% comment %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+          integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+  {% endcomment %}
+  <link type="text/css" rel="stylesheet" href="{% static 'lib/fontawesome-free-5.13.0-web/css/all.min.css' %}"/>
+
+  <link type="text/css" rel="stylesheet" href="{% static 'main.css' %}"/>
+
+  <title>Welcome</title>
+</head>
+<body>
+
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-primary fancyNavbar">
+  <a class="navbar-brand" href="#">HYPERAGILE</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Login <i class="fas fa-sign-in-alt"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <br/>
+  <h1>Quantum expedience</h1>
+  <p>Deep expertise in <strong>accelarationist</strong> singularitarian business superfluidity.</p>
+  <div class="alert alert-primary" role="alert">
+    Active users: <code>{{ answer|intcomma }}</code>
+  </div>
+  <br/>
+  <p>
+    <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal">
+      <i class="fas fa-door-open"></i>
+      &nbsp;EXIT SIMULATION
+    </button>
+  </p>
+</div>
+
+<div id="exampleModal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Irreversibility alert</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Returning to origin slice of the multiverse is not possible if you proceed beyond this point.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Abandon</button>
+        <button type="button" class="btn btn-danger">Proceed</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+{% comment %}
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+{% endcomment %}
+<script src="{% static 'lib/jquery/jquery-3.4.1.slim.min.js' %}"></script>
+<script src="{% static 'lib/popper/1.16/popper.min.js' %}"></script>
+<script src="{% static 'lib/bootstrap-4.4.1-dist/js/bootstrap.min.js' %}"></script>
+
+<!-- Common utils libs -->
+{% comment %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"
+        integrity="sha256-VeNaFBVDhoX3H+gJ37DpT/nTuZTdjYro9yBruHjVmoQ=" crossorigin="anonymous"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"-->
+<!--        integrity="sha256-G7A4JrJjJlFqP0yamznwPjAApIKPkadeHfyIwiaa9e0=" crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/voca/1.4.0/voca.min.js"
+        integrity="sha256-MgDj6U2805jL4DJY2QoJbZi1AqlNDTNRGjWJfuKUNq8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js"
+        integrity="sha256-wCBClaCr6pJ7sGU5kfb3gQMOOcIZNzaWpWcj/lD9Vfk=" crossorigin="anonymous"></script>
+{% endcomment %}
+{% comment %}
+<script src="{% static 'lib/lodash/4.17-u.1.8.3/lodash.min.js' %}"></script>
+<!--<script src="{% static 'lib/underscore/1.9.1/underscore.min.js' %}"></script>-->
+<script src="{% static 'lib/voca/1.4.0/voca.min.js' %}"></script>
+<script src="{% static 'lib/date_fns/1.30/date_fns.min.js' %}"></script>
+{% endcomment %}
+
+<script src="{% static 'main.js' %}"></script>
+</body>
+</html>

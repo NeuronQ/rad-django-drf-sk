@@ -1,0 +1,16 @@
+[Unit]
+Description=Backend Gunicorn
+After=network.target
+
+[Service]
+User=andrei
+Group=andrei
+WorkingDirectory=/path/to/this/backend
+ExecStart=/path/to/gunicorn -k uvicorn.workers.UvicornWorker -c /path/to/this/backend/gunicorn_conf.py backend.asgi:application
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+TimeoutStopSec=5
+Environment=BIND=unix:/tmp/backend-gunicorn.sock
+
+[Install]
+WantedBy=multi-user.target

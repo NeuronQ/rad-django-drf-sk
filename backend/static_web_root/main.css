@@ -1,0 +1,7 @@
+#mainNavbar {
+    background: linear-gradient(90deg, transparent, #da44ff);
+}
+
+.fancyNavbar .navbar-brand {
+    color: yellow;
+}

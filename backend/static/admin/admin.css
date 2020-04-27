@@ -1,0 +1,8 @@
+#header {
+    background: linear-gradient(90deg, #417690 75%, purple);
+    box-shadow: 0 1px 8px #ffffcc80;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: linear-gradient(90deg, #79aec8 80%, #8000807d);
+}

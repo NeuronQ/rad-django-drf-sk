@@ -1,0 +1,22 @@
+# IDE/editor specific
+# (technically these should be in each user's $GIT_DIR/info/exclude)
+.vscode/
+*.sublime-*
+
+node_modules/
+
+# dotenv
+.env
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+# local data (eg.maybe put logs here if you ahve no better idea)
+# local data
+/data/local/**
+!/data/local/.gitkeep
+
+# tmp* files
+tmp*
